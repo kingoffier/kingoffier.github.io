@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import ArrowUpRight from "./ArrowUpRight";
 import { works } from "./works-data";
 
 const scrollLetters = "SCROLL•SCROLL•SCROLL•".split("");
@@ -105,7 +106,7 @@ export default function WorksSection() {
               <div className="work-card__meta">
                 <h3>
                   {work.title}
-                  <span aria-hidden="true">↗</span>
+                  <ArrowUpRight />
                 </h3>
                 <p>{work.category}</p>
               </div>

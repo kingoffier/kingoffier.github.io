@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ArrowUpRight from "./ArrowUpRight";
 import WorksSection from "./WorksSection";
 
 function Spark({ className = "" }: { className?: string }) {
@@ -223,9 +224,7 @@ export default function Home() {
               <span className="contact-row__action">
                 Написать в Telegram
               </span>
-              <span className="contact-row__arrow" aria-hidden="true">
-                ↗
-              </span>
+              <ArrowUpRight className="contact-row__arrow" />
             </a>
 
             <a
@@ -235,9 +234,7 @@ export default function Home() {
             >
               <span className="contact-row__label">Email</span>
               <span className="contact-row__action">Отправить письмо</span>
-              <span className="contact-row__arrow" aria-hidden="true">
-                ↗
-              </span>
+              <ArrowUpRight className="contact-row__arrow" />
             </a>
           </div>
         </div>
@@ -290,17 +287,17 @@ export default function Home() {
             <ul className="site-footer__links">
               <li>
                 <a href="#about">
-                  Обо мне <span aria-hidden="true">↗</span>
+                  Обо мне <ArrowUpRight />
                 </a>
               </li>
               <li>
                 <a href="#work">
-                  Мои работы <span aria-hidden="true">↗</span>
+                  Мои работы <ArrowUpRight />
                 </a>
               </li>
               <li>
                 <a href="#contact">
-                  Контакты <span aria-hidden="true">↗</span>
+                  Контакты <ArrowUpRight />
                 </a>
               </li>
             </ul>
@@ -318,7 +315,7 @@ export default function Home() {
                   <span className="site-footer__contact-copy">
                     Telegram — @kingoffier
                   </span>
-                  <span aria-hidden="true">↗</span>
+                  <ArrowUpRight />
                 </a>
               </li>
               <li>
@@ -326,7 +323,7 @@ export default function Home() {
                   <span className="site-footer__contact-copy">
                     Почта — kingoffier@mail.ru
                   </span>
-                  <span aria-hidden="true">↗</span>
+                  <ArrowUpRight />
                 </a>
               </li>
             </ul>
