@@ -1207,7 +1207,7 @@ a {
   }
 
   .about-title {
-    font-size: clamp(9rem, 38vw, 20rem);
+    font-size: clamp(6rem, 23vw, 11rem);
   }
 
   .about-statement {
@@ -1250,14 +1250,14 @@ a {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   :root {
     --header-height: auto;
   }
 
   .hero {
     height: auto;
-    min-height: 100svh;
+    min-height: 0;
     grid-template-rows: auto auto;
   }
 
@@ -1293,7 +1293,7 @@ a {
   .hero-stage {
     display: flex;
     height: auto;
-    min-height: calc(100svh - 5.25rem);
+    min-height: 0;
     flex-direction: column;
     overflow: visible;
     padding:
@@ -1322,35 +1322,27 @@ a {
     bottom: auto;
     left: auto;
     max-width: 31rem;
-    margin-top: auto;
-    padding: clamp(1.5rem, 4svh, 2.5rem) 3.3rem 0 0;
+    margin-top: clamp(1.25rem, 4svh, 2rem);
+    padding: 0;
     font-size: clamp(0.82rem, 3.5vw, 0.98rem);
   }
 
   .portfolio-label {
-    top: auto;
-    right: 0;
-    bottom: 1rem;
-    width: auto;
-    min-height: 2.6rem;
-    padding: 0 0.85rem;
-    flex-direction: row;
-    font-size: 0.62rem;
-    writing-mode: horizontal-tb;
-    rotate: none;
+    display: none;
   }
 
   .about-identity {
-    min-height: max(35rem, 74svh);
+    min-height: 0;
     padding: 3rem 1rem 2.5rem;
   }
 
   .about-title {
-    font-size: clamp(7.5rem, 38vw, 16rem);
+    font-size: clamp(5.5rem, 20vw, 9rem);
   }
 
   .about-statement {
     max-width: calc(100% - 2rem);
+    margin: clamp(2rem, 6vw, 3rem) 0 0;
     padding-top: 1.25rem;
     font-size: clamp(1.35rem, 6vw, 1.75rem);
   }
@@ -1386,7 +1378,7 @@ a {
   }
 
   .works-heading {
-    min-height: 27rem;
+    min-height: clamp(17rem, 34vw, 21rem);
     padding-top: 1rem;
   }
 
@@ -1395,10 +1387,7 @@ a {
   }
 
   .works-orbit {
-    top: auto;
-    right: 0.25rem;
-    bottom: 1.5rem;
-    width: clamp(8rem, 30vw, 9.5rem);
+    display: none;
   }
 
   .works-grid {
@@ -1461,7 +1450,10 @@ a {
   }
 
   .contact-intro {
-    min-height: 19rem;
+    min-height: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
     padding: 2rem 1rem;
     border-right: 0;
     border-bottom: 1px solid var(--foreground);
@@ -1472,7 +1464,8 @@ a {
   }
 
   .contact-spark {
-    width: 4.5rem;
+    width: clamp(3.5rem, 13vw, 4.5rem);
+    flex: none;
   }
 
   .contact-actions {
@@ -1499,10 +1492,7 @@ a {
   }
 
   .contact-footer {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1.25rem 1rem;
+    display: none;
   }
 
   .site-footer {
@@ -1533,11 +1523,15 @@ a {
   }
 
   .site-footer__cta {
-    min-height: 16rem;
+    min-height: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .site-footer__spark {
-    width: 3.5rem;
+    width: clamp(3rem, 12vw, 3.75rem);
+    flex: none;
   }
 
   .site-footer__bottom {
@@ -1568,7 +1562,7 @@ a {
 
 @media (max-width: 420px) {
   .works-heading {
-    min-height: 24rem;
+    min-height: 13rem;
     padding-top: 0.5rem;
   }
 
@@ -1615,7 +1609,7 @@ a {
   }
 
   .hero-stage {
-    min-height: calc(100svh - 8.3rem);
+    min-height: 0;
     padding-top: clamp(2.5rem, 6svh, 3.5rem);
   }
 
@@ -1628,15 +1622,15 @@ a {
   }
 
   .intro {
-    padding-top: clamp(1.25rem, 3svh, 2rem);
+    margin-top: clamp(1rem, 3svh, 1.5rem);
   }
 
   .about-identity {
-    min-height: max(33rem, 72svh);
+    min-height: 0;
   }
 
   .about-title {
-    font-size: clamp(7rem, 38vw, 10rem);
+    font-size: clamp(5rem, 24vw, 6.5rem);
   }
 
   .about-statement {
