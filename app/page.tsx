@@ -11,10 +11,10 @@ function Orbit() {
     <div className="orbit" aria-hidden="true">
       <Image
         className="orbit-reference"
-        src="/orbit-reference.png"
+        src="/orbit-reference.svg"
         alt=""
-        width={217}
-        height={217}
+        width={240}
+        height={240}
         priority
         unoptimized
         draggable={false}
